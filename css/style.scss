@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+html{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
+
+
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    .main{
+        background-color: hsl(213, 19%, 18%);
+        color: hsl(0, 0%, 100%);
+        padding: 1rem;
+        height: 18rem;
+        width: 20rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        margin-left: 2.5rem;
+        border-radius: 0.5rem;
+        .five{
+            margin-right: 10rem;
+        }
+        .number{
+            float: left;
+            text-align: center;
+            margin-right: 1.2rem;
+            margin-left: 1.2rem;
+            background-color: hsl(216, 17%, 38%);
+            border-radius: 0.9rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            
+        }
+        .text{
+            color: hsl(217, 12%, 63%);
+        }
+        #clickme{
+            background-color: orange ;
+            width: 20rem;
+            border-radius: 0.9rem;
+            border: none;
+            height: 2rem;
+            margin-top: 2rem;
+            color: white;
+
+        }
+    }
+    .thank{
+        display: none;
+
+        background-color: hsl(213, 19%, 18%);
+        color: hsl(0, 0%, 100%);
+        padding: 1rem;
+        height: 18rem;
+        width: 20rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        margin-left: 2.5rem;
+        border-radius: 0.5rem;
+        text-align: center;
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        .main{
+            margin-left: 40rem;
+            margin-top: 10rem;
+        }
+        .thank{
+            margin-left: 40rem;
+            margin-top: 10rem;
+             
+        }
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+ <div class="main" id="swapper-first">
+   <img class="circle" src="./images/icon-star.svg" alt="" srcset="">
+    <h2>How did we do?</h2>
+
+    <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+
+    <div class="parent">
+      <p class="number">1</p> <p class="number">2</p> <p class="number">3</p> <p class="number">4</p> <p class="number five">5</p>
+    </div> 
+    
+    <br>
+
+    
+    <a id="clickme" href="javascript:SwapDivsWithClick('swapper-first','swapper-other')">   Submit &nbsp; &nbsp; </a>
+
+  </div>
+
+  <div class="thank" id="swapper-other"> 
+    <img src="./images/illustration-thank-you.svg" alt="">
+    <p> You selected  out of 5</p>
+
+    <h3>Thank you!</h3>
+
+    <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sai Bramarambika</a>.
+  </div>
+  
+  <script type="text/javascript">
+    function SwapDivsWithClick(main,thank)
+    {
+      d1 = document.getElementById(main);
+      d2 = document.getElementById(thank);
+      if( d2.style.display == "none" )
+      {
+          d1.style.display = "none";
+          d2.style.display = "block";
+      }
+      else
+      {
+          d1.style.display = "block";
+          d2.style.display = "none";
+      }
+    }
+
+
+
+
+  </script>
+</body>
+</html>
